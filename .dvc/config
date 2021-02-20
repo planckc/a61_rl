@@ -1,6 +1,0 @@
-[core]
-    remote = mondataremoter3
-['remote "mondataremoter"']
-    url = https://drive.google.com/drive/folders/1hDvFV1WzZP1TYQsGSeGKFJJHEm04uayW?usp=sharing
-['remote "mondataremoter3"']
-    url = https://drive.google.com/drive/folders/1hDvFV1WzZP1TYQsGSeGKFJJHEm04uayW?usp=sharing
