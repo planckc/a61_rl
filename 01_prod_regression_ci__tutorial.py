@@ -172,6 +172,11 @@ with open("metrics.txt", 'w') as outfile:
         outfile.write("MSE:  {0:2.1f} \n".format(mse))
         outfile.write("R2: {0:2.1f}\n".format(r2))
 
+import pickle
+# Save to file in the current working directory
+pkl_filename = "pickle_model.pkl"
+with open(pkl_filename, 'wb') as file:
+    pickle.dump(lm, file)
 
 # In[73]:
 
