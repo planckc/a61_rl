@@ -172,12 +172,13 @@ with open("metrics.txt", 'w') as outfile:
         outfile.write("MSE:  {0:2.1f} \n".format(mse))
         outfile.write("R2: {0:2.1f}\n".format(r2))
 
-from datetime import date
-today = date.today()
+from datetime import datetime
+today = datetime.now()
 
 import pickle
 # Save to file in the current working directory
-pkl_filename = "pickle_model_" + str(today) + ".pkl"
+pkl_filename = "pickle_model_" + str(today.year) + "-" + str(today.month)+ "-"+str(today.day)+\
+               "-"+str(today.hour)+str(today.second) + ".pkl"
 with open(pkl_filename, 'wb') as file:
     pickle.dump(lm, file)
 print("le modèle '"+pkl_filename+"' a été exporté ")
