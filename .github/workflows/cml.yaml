@@ -16,3 +16,5 @@ jobs:
           # Write your CML report
           echo "## Metriques:" >> report.md
           cat metrics.txt >> report.md
+      
+          ls -l
