@@ -177,8 +177,8 @@ today = datetime.now()
 
 import pickle
 # Save to file in the current working directory
-pkl_filename = "pickle_model_" + str(today.year) + "-" + str(today.month)+ "-"+str(today.day)+\
-               "-"+str(today.hour)+str(today.second) + ".pkl"
+pkl_filename = "pickle_model_" + str(today.year) + "-" + str(today.month)+ "-"+str(today.day)\
+               + "-" + str(today.hour)+"-"+str(today.minute)+"-" + str(today.second) + ".pkl"
 with open(pkl_filename, 'wb') as file:
     pickle.dump(lm, file)
 print("le modèle '"+pkl_filename+"' a été exporté ")
